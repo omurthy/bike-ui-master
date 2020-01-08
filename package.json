@@ -1,6 +1,9 @@
 {
   "name": "bike-ui",
   "version": "0.0.0",
+  "engines": {
+    "node": "12.13.1"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.json",
