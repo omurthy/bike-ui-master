@@ -1,7 +1,11 @@
 {
-  "compileOnSave": false,
+  "compileOnSave": false, 
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./", 
+    "paths": {
+      "@angular/core/src/metadata/*": ["./node_modules/@angular/core"],
+      "core-js/es7/reflect": ["./node_modules/core-js/es/reflect"],
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
