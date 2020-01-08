@@ -1,0 +1,28 @@
+<div class="container">
+  <p-table [value]="bikes">
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Owner Name</th>
+              <th>Email</th>
+              <th>Model</th>
+              <th class="text-right">Purchase Price</th>
+            </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-bike>
+    <tr >
+      <td>
+        <a [routerLink] ="['/admin/view',bike.id]">{{bike.name}}</a>
+      </td>
+      <td>
+        {{bike.email}}
+      </td>
+      <td>
+        {{bike.model}}
+      </td>
+      <td class="text-right">
+        {{bike.purchasePrice}}
+      </td>
+    </tr>
+  </ng-template>
+  </p-table>
+</div>
